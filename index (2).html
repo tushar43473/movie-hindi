@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ভিডিও প্লেয়ার</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>ভিডিও প্ল্যাটফর্ম</h1>
+      <nav>
+        <ul>
+          <li><a href="#">হোম</a></li>
+          <li><a href="#">আপলোড</a></li>
+          <li><a href="#">প্রোফাইল</a></li>
+          <li><a href="#">সার্চ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- ভিডিও প্লেয়ার -->
+    <div class="video-player">
+      <video id="main-video" controls>
+        <source src="/ultrahd-wallpapers/Bholaa.(2023).720p.AMZN.WebRip.Hindi.AAC2.0.H.264.mkv" type="video/mp4">
+        আপনার ব্রাউজার ভিডিও প্লেব্যাক সাপোর্ট করে না।
+      </video>
+      <div class="controls">
+        <button id="playPauseBtn">⏯️</button>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+        <button id="fullscreenBtn">🖥️</button>
+      </div>
+    </div>
+
+    <!-- ভিডিও টাইটেল এবং বর্ণনা -->
+    <div class="video-details">
+      <h2>ভিডিও টাইটেল</h2>
+      <p>এটি ভিডিও বর্ণনা যা ভিডিও সম্পর্কে বিস্তারিত তথ্য দেখাবে।</p>
+    </div>
+
+    <!-- থাম্বনেল গ্যালারী -->
+    <div class="thumbnail-gallery">
+      <img class="thumbnail" src="thumb1.jpg" alt="Thumbnail 1" onclick="changeVideo('video1.mp4')">
+      <img class="thumbnail" src="thumb2.jpg" alt="Thumbnail 2" onclick="changeVideo('video2.mp4')">
+      <img class="thumbnail" src="thumb3.jpg" alt="Thumbnail 3" onclick="changeVideo('video3.mp4')">
+    </div>
+  </div>
+  <div class="thumbnail-gallery">
+  <img class="thumbnail" src="thumb1.jpg" alt="Thumbnail 1" onclick="changeVideo('video1.mp4')">
+  <img class="thumbnail" src="thumb2.jpg" alt="Thumbnail 2" onclick="changeVideo('video2.mp4')">
+  <img class="thumbnail" src="thumb3.jpg" alt="Thumbnail 3" onclick="changeVideo('video3.mp4')">
+</div>
+<div class="thumbnail-gallery">
+  <img class="thumbnail" src="thumb1.jpg" alt="Thumbnail 1" onclick="changeVideo('video1.mp4')">
+  <img class="thumbnail" src="thumb2.jpg" alt="Thumbnail 2" onclick="changeVideo('video2.mp4')">
+  <img class="thumbnail" src="thumb3.jpg" alt="Thumbnail 3" onclick="changeVideo('')">
+</div>
+
+  <footer>
+    <p>&copy; 2024 ভিডিও প্ল্যাটফর্ম | সকল অধিকার সংরক্ষিত</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
